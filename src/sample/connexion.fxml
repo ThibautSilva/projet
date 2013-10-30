@@ -1,0 +1,19 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Labeled?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<GridPane fx:controller="sample.Connexion"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Label text="Bienvenue"  style="-fx-font-size: 24pt"/>
+    <Label text="Login:" GridPane.rowIndex="1"/>
+    <TextField  fx:id="loginField"  GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Label text="Password:" GridPane.rowIndex="2" />
+    <PasswordField fx:id="mdpField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Button text="Connexion" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Label fx:id='messageLabel' GridPane.columnIndex="1" GridPane.rowIndex="4" />
+</GridPane>

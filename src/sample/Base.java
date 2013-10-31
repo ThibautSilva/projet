@@ -65,16 +65,10 @@ public class Base implements Initializable {
                 }catch(Exception ex){
                     ex.printStackTrace();
                 }
-                //Parent root = FXMLLOADER.load(getClass().getResource("selectBDD.fxml"));
                 ChampValeur c =fxmlLoader.getController();
                 c.setTableSelected(tableselected);
                 c.setBdSelected(bdselected);
                 c.getValeurTable();
-
-
-               /* c.setSelected(selected);
-                c.setListeJoueur(listeJoueursObserves);    */
-
 
                 Stage popUp = new Stage();
                 popUp.initModality(Modality.WINDOW_MODAL);
@@ -91,15 +85,6 @@ public class Base implements Initializable {
                 System.out.println("OK" + bdselected);
                 tablelist = getTable(bdselected);
                 setLesTables(tablelist);
-                /*setLesJoueurs(); */
-                /*
-                URL location = getClass().getResource("create_joueur.fxml");
-                FXMLLoader fxmlLoader = new FXMLLoader();
-                fxmlLoader.setLocation(location);
-                fxmlLoader.setBuilderFactory(new JavaFXBuilderFactory());
-                ControllerCreateJoueur c = fxmlLoader.getController();
-                c.setSelected(selected);
-                */
             }
         });
         list_table.getSelectionModel().selectedItemProperty().addListener(new ChangeListener() {
@@ -107,21 +92,12 @@ public class Base implements Initializable {
             public void changed(ObservableValue observable, Object oldvalue, Object newValue) {
                 tableselected = (String) newValue;
                 System.out.println("OK" + tableselected);
-                /*setLesJoueurs(); */
-                /*
-                URL location = getClass().getResource("create_joueur.fxml");
-                FXMLLoader fxmlLoader = new FXMLLoader();
-                fxmlLoader.setLocation(location);
-                fxmlLoader.setBuilderFactory(new JavaFXBuilderFactory());
-                ControllerCreateJoueur c = fxmlLoader.getController();
-                c.setSelected(selected);
-                */
             }
         });
     }
 
 
-    public static ArrayList listeTable (){
+    public static ArrayList listeTable (){     //On fait un arraylist de type string contenant les base de données
         ArrayList<String> list = new ArrayList<String>();
         try {
             DatabaseMetaData meta = con.getMetaData();
@@ -130,42 +106,41 @@ public class Base implements Initializable {
                 list.add(res.getString("TABLE_CAT"));
             }
             res.close();
-
-            con.close();
+           con.close();
         } catch (Exception e) {
             System.err.println("ClassNotFoundException: "
                     +e.getMessage());
         }
         return list;
     }
-    public static ArrayList getTable(String bd){
+    public static ArrayList getTable(String bd){    //on recupere les tables par rapport au nom de la base
         ArrayList<String> list = new ArrayList();
-        Connexion.setBd(bd);
-        Connexion.connexion();
-        con = Connexion.getCon();
+        Connexion.setBd(bd);   //On envoi la base de donnée dans base
+        Connexion.connexion();    // On lance la connexion
+        con = Connexion.getCon();    // On recupere la connexion
         try {
             //on récupère les métadonnées à partir de la connexion
             DatabaseMetaData dmd = con.getMetaData();
             //récupération des informations
             ResultSet tables = dmd.getTables(con.getCatalog(),null,"%",null);
-            //affichage des informations
+            //affichage des noms des tables
             while(tables.next()){
                  String tableName = tables.getString("TABLE_NAME" );
                 list.add(tableName);
             }
         }catch (Exception e ){
         }
-        return list;
+        return list;  // on retourne eu liste des noms des tables
     }
 
-    public void setLesBd(ArrayList<String> liste) {
+    public void setLesBd(ArrayList<String> liste) {  //Met les BD dans une table observe
         this.bdlist = liste;
         for(String bd  : bdlist){
             this.lesBdObserves.add(bd);
         }
     }
 
-    public void setLesTables(ArrayList<String> liste) {
+    public void setLesTables(ArrayList<String> liste) {    //Met la table list dans une table observes
         this.tablelist = liste;
         this.lesTablesObserves.clear();
         for(String bd  : tablelist){

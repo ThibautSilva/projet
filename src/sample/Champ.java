@@ -12,17 +12,17 @@ import java.util.ArrayList;
 public class Champ {
     private String type;
     private String nom;
-    private static ArrayList<Champ> listValeur;
+    private static ArrayList<Champ> listValeur = new ArrayList<Champ>();   //Contient la liste des objets Champ
 
-    public Champ() {
+    public Champ() {                      //Constructeur
         listValeur = new ArrayList<Champ>();
     }
 
-    public Champ(String nom, String type) {
+    public Champ(String nom) {  // Constructeur
         this.nom = nom;
         this.type = type;
     }
-
+                //GETTER/SETTER
     public String getType() {
         return type;
     }
@@ -42,7 +42,7 @@ public class Champ {
     public static ArrayList<Champ> getValeurTable() {
         return listValeur;
     }
-    public void setValeurTable(ArrayList<Champ> list){
-        listValeur = list;
+    public static void ajoutList(Champ c)  {
+        listValeur.add(c);
     }
 }

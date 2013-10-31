@@ -33,10 +33,10 @@ import java.util.ResourceBundle;
 public class ChampValeur implements Initializable {
     @FXML ListView valeursdestables;
     @FXML Button bt_valid;
-    private ObservableList<Champ> ValeursDesTablesObserves = FXCollections.observableArrayList();
+    private ObservableList<String> ValeursDesTablesObserves = FXCollections.observableArrayList();
     private String tableselected;
     private String bdselected;
-    private ArrayList<Champ> ValeurTable;
+    public ArrayList<Champ> ValeurTable = new ArrayList<Champ>();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -44,27 +44,17 @@ public class ChampValeur implements Initializable {
         bt_valid.setOnAction(new EventHandler<ActionEvent>(){
             @Override
             public  void handle(ActionEvent e) {
-                URL location = getClass().getResource("Champ.fxml");
-
+                URL location = getClass().getResource("formulaire.fxml");
                 FXMLLoader fxmlLoader = new FXMLLoader();
                 fxmlLoader.setLocation(location);
                 fxmlLoader.setBuilderFactory(new JavaFXBuilderFactory());
-
                 Parent root = null;
                 try {
                     root = (Parent) fxmlLoader.load(location.openStream());
                 }catch(Exception ex){
                     ex.printStackTrace();
                 }
-                //Parent root = FXMLLOADER.load(getClass().getResource("selectBDD.fxml"));
                 ChampValeur c =fxmlLoader.getController();
-                /*c.setSelected(selected);
-                c.getValeurTable(selected);   */
-
-
-               /* c.setSelected(selected);
-                c.setListeJoueur(listeJoueursObserves);    */
-
 
                 Stage popUp = new Stage();
                 popUp.initModality(Modality.WINDOW_MODAL);
@@ -82,42 +72,28 @@ public class ChampValeur implements Initializable {
     public void setBdSelected (String selected){
         this.bdselected = selected;
     }
-
     public void setLesValeursDesTables() {
         this.ValeurTable = Champ.getValeurTable();
-        for(Champ c  : ValeurTable){
-            this.ValeursDesTablesObserves.add(c);
+        for(Champ c  : this.ValeurTable){
+            this.ValeursDesTablesObserves.add(c.getNom());
         }
     }
-    public void getValeurTable(){
+    public void getValeurTable(){     //On recupere les valeurs de la table selectionné
         try {
-            Connexion.setBd(bdselected);
+            //Connexion.setBd(bdselected);         //Je crois que c'est optionnel
             Connexion.connexion();
-            Connection con = Connexion.getCon();
+            Connection con = Connexion.getCon();    //recupere la connexion
             DatabaseMetaData dmd = Base.con.getMetaData();
-
-
-//récupération des informations
-       /* ResultSet resultat = dmd.getColumns(Base.con.getCatalog(),null,tableselected, "%"); */
-
-//affichage des informations
-        /*ResultSetMetaData rsmd = resultat.getMetaData();
-        while(resultat.next()){
-            for(int i=0; i<rsmd.getColumnCount(); i++){
-                Champ c = new Champ();
-                c.setNom(rsmd.getColumnName(i+1));
-            }
-        }  */
-            ResultSet columns = dmd.getColumns(null, null, tableselected, null);
+            ResultSet columns = dmd.getColumns(null, null, tableselected, null);  //On recupere les meta de la table selectionné
             int i = 0;
             while (columns.next())
             {
-                Champ c = new Champ();
-                c.setNom(columns.getString("COLUMN_NAME"));
+                Champ c = new Champ(columns.getString("COLUMN_NAME"));                     // On range dans un objet Champ le nom
+                Champ.ajoutList(c);                                            //On met chaque objet dans la liste ValeurTable
                 System.out.println(columns.getString("COLUMN_NAME"));
                 i++;
             }
-            setLesValeursDesTables();
+            setLesValeursDesTables();      // On range la list des noms dans une list observable
         }catch (SQLException E) {
         }
     }

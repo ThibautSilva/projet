@@ -114,7 +114,6 @@ public class ChampValeur implements Initializable {
             {
                 Champ c = new Champ();
                 c.setNom(columns.getString("COLUMN_NAME"));
-
                 System.out.println(columns.getString("COLUMN_NAME"));
                 i++;
             }

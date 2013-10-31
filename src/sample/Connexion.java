@@ -10,7 +10,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -19,7 +18,6 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 /**
@@ -37,10 +35,10 @@ public class Connexion implements Initializable {
     public static Connection con;
 
     @Override
-    public void initialize(URL url, ResourceBundle resourceBundle){
+    public void initialize(URL url, ResourceBundle resourceBundle){ //
         bt_valider.setOnAction(new EventHandler<ActionEvent>(){
             @Override
-            public  void handle(ActionEvent e) {
+            public  void handle(ActionEvent e) {         //Quand on clique sur le bouton On ferme connexion et on ouvre base.fxml
                 Connexion.connexion();
                 Node source = (Node)  e.getSource();
                 Stage stage  = (Stage) source.getScene().getWindow();
@@ -57,13 +55,9 @@ public class Connexion implements Initializable {
                 }catch(Exception ex){
                     ex.printStackTrace();
                 }
-                //Parent root = FXMLLOADER.load(getClass().getResource("selectBDD.fxml"));
                 Base c =fxmlLoader.getController();
-                c.bdlist = Base.listeTable();
-                c.setLesBd(c.bdlist);
-               /* c.setSelected(selected);
-                c.setListeJoueur(listeJoueursObserves);    */
-
+                c.bdlist = Base.listeTable();       // On liste les noms de la base de données dans bdlist
+                c.setLesBd(c.bdlist);  //  On récupere bdlist pour le mettre en observable
 
                 Stage popUp = new Stage();
                 popUp.initModality(Modality.WINDOW_MODAL);
@@ -73,7 +67,7 @@ public class Connexion implements Initializable {
             }
         });
     }
-    public static Connection getConnection(String login, String mdp, String bd){
+    public static Connection getConnection(String login, String mdp, String bd){ // Connexion à la base de données
         System.out.println("-------- MySQL JDBC Connection Testing ------------");
 
         try {
@@ -102,15 +96,15 @@ public class Connexion implements Initializable {
         }
         return connection;
     }
-    public static void connexion () {
+    public static void connexion () {  //Lancement de la connexion avec les champs renseignés dans connexion.fxml
         con = Connexion.getConnection(loginField.getText(), mdpField.getText(), bd);
     }
 
-    public static Connection getCon() {
+    public static Connection getCon() { //On recupère la connexion
         return con;
     }
 
-    public static void setBd(String bdnew) {
+    public static void setBd(String bdnew) {   // On set le nom de la BD
         bd = bdnew;
     }
 }

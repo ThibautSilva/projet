@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class Champ {
     private String type;
     private String nom;
-    private ArrayList<Champ> listValeur;
+    private static ArrayList<Champ> listValeur;
 
     public Champ() {
         listValeur = new ArrayList<Champ>();
@@ -40,7 +40,9 @@ public class Champ {
     }
 
     public static ArrayList<Champ> getValeurTable() {
-
         return listValeur;
+    }
+    public void setValeurTable(ArrayList<Champ> list){
+        listValeur = list;
     }
 }

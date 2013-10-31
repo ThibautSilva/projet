@@ -1,8 +1,26 @@
 package sample;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.fxml.JavaFXBuilderFactory;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+
+import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.ResourceBundle;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,11 +29,50 @@ import java.sql.SQLException;
  * Time: 18:11
  * To change this template use File | Settings | File Templates.
  */
-public class Connexion {
-    public static String login = "root";
-    public static String mdp = "";
+public class Connexion implements Initializable {
+    @FXML private static TextField loginField;
+    @FXML private static TextField mdpField;
+    @FXML private Button bt_valider;
     public static String bd = "";
     public static Connection con;
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle){
+        bt_valider.setOnAction(new EventHandler<ActionEvent>(){
+            @Override
+            public  void handle(ActionEvent e) {
+                Connexion.connexion();
+                Node source = (Node)  e.getSource();
+                Stage stage  = (Stage) source.getScene().getWindow();
+                stage.close();
+                URL location = getClass().getResource("base.fxml");
+
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(location);
+                fxmlLoader.setBuilderFactory(new JavaFXBuilderFactory());
+
+                Parent root = null;
+                try {
+                    root = (Parent) fxmlLoader.load(location.openStream());
+                }catch(Exception ex){
+                    ex.printStackTrace();
+                }
+                //Parent root = FXMLLOADER.load(getClass().getResource("selectBDD.fxml"));
+                Base c =fxmlLoader.getController();
+                c.bdlist = Base.listeTable();
+                c.setLesBd(c.bdlist);
+               /* c.setSelected(selected);
+                c.setListeJoueur(listeJoueursObserves);    */
+
+
+                Stage popUp = new Stage();
+                popUp.initModality(Modality.WINDOW_MODAL);
+                popUp.initOwner(((Node)e.getSource()).getScene().getWindow());
+                popUp.setScene(new Scene(root, 800,600));
+                popUp.show();
+            }
+        });
+    }
     public static Connection getConnection(String login, String mdp, String bd){
         System.out.println("-------- MySQL JDBC Connection Testing ------------");
 
@@ -46,7 +103,7 @@ public class Connexion {
         return connection;
     }
     public static void connexion () {
-        con = Connexion.getConnection(login, mdp, bd);
+        con = Connexion.getConnection(loginField.getText(), mdpField.getText(), bd);
     }
 
     public static Connection getCon() {

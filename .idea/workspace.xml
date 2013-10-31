@@ -4,15 +4,19 @@
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1383157980628" ignored="false" />
-    <file path="/Controller.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1383153300818" ignored="false" />
+    <file path="/Main.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1382829112439" ignored="false" />
+    <file path="/Controller.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1382828614327" ignored="false" />
     <file path="/sample.fxml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1359381080865" ignored="false" />
     <file path="$PROJECT_DIR$/../seance7/ClubsV2/.idea/workspace.xml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1381953148593" ignored="false" />
     <file path="/BD.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1382826066069" ignored="false" />
-    <file path="$PROJECT_DIR$/../ClubsJoueursFX/src/sample/ControllerFirstForm.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1383152280070" ignored="false" />
-    <file path="/connexion.fxml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1383153127616" ignored="false" />
-    <file path="/Base.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1383158292549" ignored="false" />
-    <file path="/Connexion.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1383156864609" ignored="false" />
+    <file path="/Connexion.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1383170717922" ignored="false" />
+    <file path="/connexion.fxml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1383166748837" ignored="false" />
+    <file path="/base.fxml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1383168150189" ignored="false" />
+    <file path="/Base.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1383175639117" ignored="false" />
+    <file path="D:/Lycée/Poincaré/Deuxième Année/Dondelinger/JAVA/seance10/src/sample/ControllerListClubs.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1383169759355" ignored="false" />
+    <file path="/Champ.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1383177588110" ignored="false" />
+    <file path="/ChampValeur.java" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1383177639781" ignored="false" />
+    <file path="/Champ.fxml" changelist="cdb932d9-7e58-4d94-93a9-e7b232ef17da" time="1383173468094" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +31,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -64,8 +67,9 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/sample/Connexion.java" line="48" class="sample.Connexion" package="sample">
+      <breakpoint url="file://$PROJECT_DIR$/src/sample/Champ.java" line="38" class="sample.Champ" package="sample">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -93,9 +97,30 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
+            <state line="17" column="37" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Champ.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/Champ.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="15" selection-start="808" selection-end="818" vertical-scroll-proportion="0.8148148">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChampValeur.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/ChampValeur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="116" column="0" selection-start="3884" selection-end="3884" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1345#2578#0" expanded="true" />
+                <element signature="e#2567#2568#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,18 +129,24 @@
       <file leaf-file-name="Controller.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="1" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
+            <state line="10" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Base.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Base.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Base.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="42" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.3238512">
+            <state line="38" column="30" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1754#3027#0" expanded="true" />
+                <element signature="e#3016#3017#0" expanded="true" />
+                <element signature="e#3101#3906#0" expanded="true" />
+                <element signature="e#3895#3896#0" expanded="true" />
+                <element signature="e#3983#4703#0" expanded="true" />
+                <element signature="e#4692#4693#0" expanded="true" />
+                <element signature="e#4803#4811#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,7 +155,16 @@
       <file leaf-file-name="Champ.fxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Champ.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="12" column="104" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.fxml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/base.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="4" selection-start="519" selection-end="617" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,9 +173,9 @@
       <file leaf-file-name="connexion.fxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/connexion.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="59" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+            <state line="18" column="17" selection-start="929" selection-end="929" vertical-scroll-proportion="0.0">
               <folding>
-                <marker date="1383153561737" expanded="true" signature="443:462" placeholder="{...}" />
+                <marker date="1383166754707" expanded="true" signature="443:462" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -144,9 +184,10 @@
       <file leaf-file-name="Connexion.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Connexion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.0">
+            <state line="16" column="78" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1157#2564#0" expanded="true" />
+                <element signature="e#2553#2554#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,13 +203,17 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/sample/BD.java" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/connexion.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/BD.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/sample/connexion.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/base.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Connexion.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/Champ.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Base.java" />
+        <option value="$PROJECT_DIR$/src/sample/Champ.java" />
+        <option value="$PROJECT_DIR$/src/sample/ChampValeur.java" />
       </list>
     </option>
   </component>
@@ -249,29 +294,34 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ASUS/Outils professionnels/Lycée/BTS/2ème année/Cour/SLAM 4/JAVA/seance7/tp7-2" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="D:/Lycée/Poincaré/Deuxième Année/Dondelinger/JAVA/seance7/mysql-connector-java-5.1.26/mysql-connector-java-5.1.26-bin.jar!/" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Thib'\Documents\GitHub\projet\src\sample" />
+      <recent name="C:\Users\Thib'\Documents\GitHub\projet" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -402,6 +452,23 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
@@ -435,7 +502,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -443,7 +510,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3983287" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41061452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -452,12 +519,12 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.67270195" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13770914" sideWeight="0.67270195" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32729805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13770914" sideWeight="0.67548746" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32451254" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -532,15 +599,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/connexion.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1383153561737" expanded="true" signature="443:462" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="25" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
@@ -557,15 +615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/connexion.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1383153561737" expanded="true" signature="443:462" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -579,15 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="35" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/connexion.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1383153561737" expanded="true" signature="443:462" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -609,60 +649,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/connexion.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="45" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+        <state line="18" column="17" selection-start="929" selection-end="929" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1383153561737" expanded="true" signature="443:462" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Champ.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/connexion.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="59" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1383153561737" expanded="true" signature="443:462" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="1" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1383166754707" expanded="true" signature="443:462" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Connexion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.0">
+        <state line="16" column="78" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1157#2564#0" expanded="true" />
+            <element signature="e#2553#2554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="37" selection-start="501" selection-end="501" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/base.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="4" selection-start="519" selection-end="617" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Champ.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="104" selection-start="626" selection-end="626" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/jre/lib/jfxrt.jar!/com/sun/javafx/event/EventHandlerManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="36" selection-start="1771" selection-end="1771" vertical-scroll-proportion="0.422452">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Base.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="42" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.3238512">
+        <state line="38" column="30" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1754#3027#0" expanded="true" />
+            <element signature="e#3016#3017#0" expanded="true" />
+            <element signature="e#3101#3906#0" expanded="true" />
+            <element signature="e#3895#3896#0" expanded="true" />
+            <element signature="e#3983#4703#0" expanded="true" />
+            <element signature="e#4692#4693#0" expanded="true" />
+            <element signature="e#4803#4811#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ChampValeur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="0" selection-start="3884" selection-end="3884" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1345#2578#0" expanded="true" />
+            <element signature="e#2567#2568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Champ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="15" selection-start="808" selection-end="818" vertical-scroll-proportion="0.8148148">
+          <folding />
         </state>
       </provider>
     </entry>

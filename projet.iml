@@ -10,7 +10,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://C:/Program Files (x86)/MySQL/MySQL Connector J/mysql-connector-java-5.1.26-bin.jar!/" />
+          <root url="jar://D:/Lycée/Poincaré/Deuxième Année/Dondelinger/JAVA/seance7/mysql-connector-java-5.1.26/mysql-connector-java-5.1.26-bin.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

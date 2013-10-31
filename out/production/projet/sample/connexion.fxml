@@ -14,6 +14,6 @@
     <Label text="Password:" GridPane.rowIndex="2" />
     <PasswordField fx:id="mdpField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
 
-    <Button text="Connexion" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Button fx:id="bt_valider" text="Connexion" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
     <Label fx:id='messageLabel' GridPane.columnIndex="1" GridPane.rowIndex="4" />
 </GridPane>
